@@ -1,11 +1,10 @@
 const express =require('express')
 
-const router = express.Router()
+const router = express.Router(); 
 
 const {getDarvin,createDarvin}=require('../controller/controller')
 
+router.route('/:darvinlink').get(getDarvin) 
+router.route('/create').post(createDarvin)
 
-router.route('/:darvinlink').get(getDarvin)
-router.route('/creat').post(createDarvin)
-
-module.export=router    
+module.exports=router    

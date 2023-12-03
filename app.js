@@ -11,9 +11,7 @@ app.use(express.json());
 
 app.use(express.static('./public'));
 
-app.use('/darvinberfin',rota)
-
-   
+app.use('/darvinberfin',rota) 
 
 const start = async()=>{
 try{

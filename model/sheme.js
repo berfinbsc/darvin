@@ -6,7 +6,7 @@ const DarvinSheme= new mongoose.Schema({
         type:String,
         required:[true,'must provide short link'],
         trim:true,
-        maxlength:[10,'short link can not be more than 10 characters'],
+        maxlength:[20,'short link can not be more than 20 characters'],
     },   
     longlink:{  
         type:String,
@@ -15,7 +15,12 @@ const DarvinSheme= new mongoose.Schema({
 
 });
 
+
+
+
 module.exports=mongoose.model('DarvinSheme',DarvinSheme)
 
  
-// 
+
+ 
+   
